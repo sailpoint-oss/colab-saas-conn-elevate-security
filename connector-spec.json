@@ -1,0 +1,121 @@
+{
+  "name": "Elevate Security",
+  "commands": [
+    "std:account:list",
+    "std:account:read",
+    "std:test-connection"
+  ],
+  "sourceConfig": [
+    {
+      "type": "menu",
+      "label": "Configuration",
+      "items": [
+        {
+          "type": "section",
+          "sectionTitle": "Elevate Security Demo",
+          "sectionHelpMessage": "Provide connection parameters to interact securely with the target application.",
+          "items": [
+            {
+              "key": "apiKey",
+              "label": "Organization API Key",
+              "type": "text",
+              "required": true
+            },
+            {
+              "key": "apiTenant",
+              "label": "Organization Tenant",
+              "type": "text",
+              "required": true
+            },
+            {
+              "key": "departments",
+              "label": "Departments to aggregate (comma separated or * for all departments)",
+              "type": "text",
+              "required": true
+            },
+            {
+              "key": "baseUrl",
+              "label": "Base URL",
+              "type": "text",
+              "placeholder": "https://api.elevatesecurity.com",
+              "required": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "accountSchema": {
+    "displayAttribute": "individual",
+    "identityAttribute": "email",
+    "attributes": [
+      {
+        "name": "individual",
+        "type": "string",
+        "description": "Full Name of the account"
+      },
+      {
+        "name": "email",
+        "type": "string",
+        "description": "Email of the account"
+      },
+      {
+        "name": "human_risk_score",
+        "type": "long",
+        "description": "Human Risk Score"
+      },
+      {
+        "name": "actions_score",
+        "type": "long",
+        "description": "Actions Score"
+      },
+      {
+        "name": "action_factor",
+        "type": "string",
+        "description": "Action Factor"
+      },
+      {
+        "name": "attack_factor",
+        "type": "string",
+        "description": "Attack Factor"
+      },
+      {
+        "name": "malware",
+        "type": "long",
+        "description": "Malware"
+      },
+      {
+        "name": "secure_browsing",
+        "type": "long",
+        "description": "Secure Browsing"
+      },
+      {
+        "name": "actual_phishing",
+        "type": "long",
+        "description": "Actual Phishing"
+      },
+      {
+        "name": "training",
+        "type": "long",
+        "description": "Training"
+      },
+      {
+        "name": "sensitive_data_handling",
+        "type": "long",
+        "description": "Sensitive Data Handling"
+      },
+      {
+        "name": "department",
+        "type": "string",
+        "description": "Department"
+      },
+      {
+        "name": "simulated_phishing",
+        "type": "long",
+        "description": "Simulated Phishing"
+      }
+    ]
+  },
+  "entitlementSchemas": []
+}
+
