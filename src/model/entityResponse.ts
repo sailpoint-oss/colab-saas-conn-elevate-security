@@ -1,5 +1,5 @@
 export class EntityResponse {
-    individual?: string;
+    full_name?: string;
     email?: string;
     human_risk_score?: number;
     actions_score?: number;
