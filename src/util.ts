@@ -10,11 +10,11 @@ export class Util {
      */
     public userToAccount(entityResponse: EntityResponse): StdAccountListOutput {
         return  {
-            identity: entityResponse.individual ? entityResponse.individual : '',
+            identity: entityResponse.email ? entityResponse.email : '',
             uuid: entityResponse.email ? entityResponse.email : '',
             attributes: {
                 email: entityResponse.email ? entityResponse.email : '',
-                individual: entityResponse.individual ? entityResponse.individual : '',
+                full_name: entityResponse.full_name ? entityResponse.full_name : '',
                 human_risk_score: entityResponse.human_risk_score ? entityResponse.human_risk_score : '',
                 actions_score: entityResponse.actions_score ? entityResponse.actions_score : '',
                 action_factor: entityResponse.action_factor ? entityResponse.action_factor : '',
