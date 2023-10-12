@@ -13,7 +13,7 @@
 [contributors-url]:https://github.com/sailpoint-oss/colab-sp-elevate-security-poc/graphs/contributors
 
 # Elevate Security POC
-[Explore the docs »](https://your-link-to-colab-topic-here)
+[Explore the docs »](https://developer.sailpoint.com/discuss/t/elevate-security-connector/18256/2)
 
 [New to the CoLab? Click here »](https://developer.sailpoint.com/discuss/t/about-the-sailpoint-developer-community-colab/11230)
 
