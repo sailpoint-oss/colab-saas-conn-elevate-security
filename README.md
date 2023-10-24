@@ -38,4 +38,4 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- CONTACT -->
 ## Discuss
-[Click Here](https://developer.sailpoint.com/dicuss/tag/{tagName}) to discuss this tool with other users.
+[Click Here](https://developer.sailpoint.com/discuss/t/elevate-security-connector/18256/2) to discuss this tool with other users.
